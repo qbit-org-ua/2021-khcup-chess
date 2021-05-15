@@ -275,6 +275,9 @@ impl Chess {
         chess_piece_move: ChessBoardPosition,
     ) -> Result<(), &'static str> {
         match chess_piece {
+            #[cfg(not(feature = "king-moves-enabled"))]
+            ChessPiece::King => return Err("king moves are not allowed"),
+            #[cfg(feature = "king-moves-enabled")]
             ChessPiece::King => {
                 debug!(
                     "Tring to move white king from {} to {}",
@@ -476,12 +479,4 @@ impl Chess {
 
         Ok(())
     }
-}
-
-#[cfg(tests)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_invalid_king_moves() {}
 }
