@@ -176,6 +176,7 @@ impl Chess {
             "{} {} {}",
             self.white_king_position, self.white_queen_position, self.black_king_position
         );
+        info!(target: "game_log", "{} {} {}", self.white_king_position, self.white_queen_position, self.black_king_position);
         loop {
             if self.moves >= self.moves_limit {
                 return GameOver::TooManyMoves;
@@ -266,6 +267,7 @@ impl Chess {
             };
 
             println!("K{}", self.black_king_position);
+            info!(target: "game_log", "K{}", self.black_king_position);
         }
     }
 
