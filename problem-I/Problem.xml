@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!-- Problem exchange format 0.1 -->
+<Problem
+   TimeLimit="5"
+   MemoryLimit="256"
+   InputFile="pipe"
+   OutputFile="pipe"
+   InteractorExe="interactor"
+   TestCount="11"
+   PointsOnGold="100">
+<Test Input="tests/00.in" Answer="tests/01.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/02.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/03.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/04.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/05.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/06.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/07.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/08.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/09.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/10.out" Points="9"/>
+<Test Input="tests/00.in" Answer="tests/11.out" Points="9"/>
+</Problem>
